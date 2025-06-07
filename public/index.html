@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timestamp Microservice</title>
+    <style>
+      body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+      h1 { color: #333; }
+      code { background: #f4f4f4; padding: 2px 5px; }
+      .example { background: #f4f4f4; padding: 10px; margin: 10px 0; }
+    </style>
+  </head>
+  <body>
+    <h1>Timestamp Microservice</h1>
+    <p>Pass a date string or Unix timestamp to the API endpoint to get both Unix and UTC time representations.</p>
+    
+    <h2>Example Usage:</h2>
+    <div class="example">
+      <code>GET /api/2015-12-25</code><br>
+      <code>GET /api/1451001600000</code>
+    </div>
+    
+    <h2>Example Output:</h2>
+    <div class="example">
+      <code>{"unix":1451001600000,"utc":"Fri, 25 Dec 2015 00:00:00 GMT"}</code>
+    </div>
+    
+    <h2>Current Time:</h2>
+    <div class="example">
+      <a href="/api">/api</a>
+    </div>
+  </body>
+</html>
